@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <!-- Core files -->
+    <ClCompile Include="core\osg_cgal_converter\converter.cpp">
+      <Filter>core\osg_cgal_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="core\osg_cgal_converter\texture_sampler.cpp">
+      <Filter>core\osg_cgal_converter</Filter>
+    </ClCompile>
+    <ClCompile Include="core\geometry\mesh_utils.cpp">
+      <Filter>core\geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="core\common\precision.cpp">
+      <Filter>core\common</Filter>
+    </ClCompile>
+    <!-- Tools files -->
+    <ClCompile Include="tools\clip_2d\clip_2d.cpp">
+      <Filter>tools\clip_2d</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\clip_3d_closed\clip_3d_closed.cpp">
+      <Filter>tools\clip_3d_closed</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\clip_3d_open\clip_3d_open.cpp">
+      <Filter>tools\clip_3d_open</Filter>
+    </ClCompile>
+    <!-- Utils files -->
+    <ClCompile Include="utils\error_handling.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\logging.cpp">
+      <Filter>utils</Filter>
+    </ClCompile>
+    <!-- API files -->
+    <ClCompile Include="api\c_api\clip_3d_closed_capi.cpp">
+      <Filter>api\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\c_api\clip_3d_open_capi.cpp">
+      <Filter>api\c_api</Filter>
+    </ClCompile>
+    <ClCompile Include="api\c_api\logging_capi.cpp">
+      <Filter>api\c_api</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Core headers -->
+    <ClInclude Include="core\osg_cgal_converter\converter.h">
+      <Filter>core\osg_cgal_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="core\osg_cgal_converter\texture_sampler.h">
+      <Filter>core\osg_cgal_converter</Filter>
+    </ClInclude>
+    <ClInclude Include="core\geometry\mesh_utils.h">
+      <Filter>core\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="core\common\precision.h">
+      <Filter>core\common</Filter>
+    </ClInclude>
+    <!-- Tools headers -->
+    <ClInclude Include="tools\clip_2d\clip_2d.h">
+      <Filter>tools\clip_2d</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\clip_3d_closed\clip_3d_closed.h">
+      <Filter>tools\clip_3d_closed</Filter>
+    </ClInclude>
+    <ClInclude Include="tools\clip_3d_open\clip_3d_open.h">
+      <Filter>tools\clip_3d_open</Filter>
+    </ClInclude>
+    <!-- Utils headers -->
+    <ClInclude Include="utils\error_handling.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\logging.h">
+      <Filter>utils</Filter>
+    </ClInclude>
+    <!-- API headers -->
+    <ClInclude Include="api\cpp_api\roadbed_cgal_tools.h">
+      <Filter>api\cpp_api</Filter>
+    </ClInclude>
+    <ClInclude Include="api\c_api\clip_3d_closed_capi.h">
+      <Filter>api\c_api</Filter>
+    </ClInclude>
+    <ClInclude Include="api\c_api\clip_3d_open_capi.h">
+      <Filter>api\c_api</Filter>
+    </ClInclude>
+    <ClInclude Include="api\c_api\logging_capi.h">
+      <Filter>api\c_api</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Core filters -->
+    <Filter Include="core">
+      <UniqueIdentifier>{core-filter-id}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\osg_cgal_converter">
+      <UniqueIdentifier>{core-osg-cgal-converter-filter-id}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\geometry">
+      <UniqueIdentifier>{core-geometry-filter-id}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\common">
+      <UniqueIdentifier>{core-common-filter-id}</UniqueIdentifier>
+    </Filter>
+    <!-- Tools filters -->
+    <Filter Include="tools">
+      <UniqueIdentifier>{tools-filter-id}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\clip_2d">
+      <UniqueIdentifier>{tools-clip-2d-filter-id}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\clip_3d_closed">
+      <UniqueIdentifier>{tools-clip-3d-closed-filter-id}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tools\clip_3d_open">
+      <UniqueIdentifier>{tools-clip-3d-open-filter-id}</UniqueIdentifier>
+    </Filter>
+    <!-- Utils filters -->
+    <Filter Include="utils">
+      <UniqueIdentifier>{utils-filter-id}</UniqueIdentifier>
+    </Filter>
+    <!-- API filters -->
+    <Filter Include="api">
+      <UniqueIdentifier>{b88a16d3-ee3d-406e-bb99-e21a60f80753}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\c_api">
+      <UniqueIdentifier>{e3ac116f-2415-40b0-bfec-0dda3debb548}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="api\cpp_api">
+      <UniqueIdentifier>{f7b426bd-1bf8-4a4b-be3a-5dc39fdb0c51}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7CA9C36F-BB34-348B-9D5C-439A2E60F734}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+    <Platform>Win32</Platform>
+    <ProjectName>RoadBedCGALTools</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\lib\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RoadBedCGALTools.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RoadBedCGALTools</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">RoadBedCGALTools</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Platform)\release\bin\DataWare</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RoadBedCGALTools.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RoadBedCGALTools</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">RoadBedCGALTools</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\lib\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">RoadBedCGALTools.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">RoadBedCGALTools</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">RoadBedCGALTools</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\lib\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">RoadBedCGALTools.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">RoadBedCGALTools</TargetName>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">RoadBedCGALTools</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\bin\common\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)3rd\OpenSceneGraph-3.6.5\include;$(SolutionDir)3rd\CGAL-5.5\include;$(SolutionDir)3rd\Boost\include;$(SolutionDir)3rd\OpenSceneGraph-3.6.5;$(SolutionDir)3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)3rd\OpenSceneGraph-3.6.5\include;$(SolutionDir)3rd\CGAL-5.5\include;$(SolutionDir)3rd\Boost\include;$(SolutionDir)3rd\OpenSceneGraph-3.6.5;$(SolutionDir)3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)roadbed_cgal_tools;$(SolutionDir)roadbed_cgal_tools\core;$(SolutionDir)roadbed_cgal_tools\tools;$(SolutionDir)roadbed_cgal_tools\utils;$(SolutionDir)roadbed_cgal_tools\api;$(SolutionDir)3rd\OpenSceneGraph-3.6.5\include;$(SolutionDir)3rd\CGAL-5.5\include;$(SolutionDir)3rd\Boost\include;$(SolutionDir)3rd\OpenSceneGraph-3.6.5;$(SolutionDir)3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgGA.lib;osgViewer.lib;osgManipulator.lib;osgText.lib;osgFX.lib;osgTerrain.lib;osgWidget.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\3rd\OpenSceneGraph-3.6.5\release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rd\OpenSceneGraph-3.6.5\include;$(SolutionDir)3rd\CGAL-5.5\include;$(SolutionDir)3rd\Boost\include\boost-1_69;$(SolutionDir)3rd\CGAL-5.5;$(SolutionDir)include\DataWare;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+      <AdditionalOptions>/bigobj /utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+      <AdditionalDependencies>OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgGA.lib;osgViewer.lib;osgManipulator.lib;osgText.lib;osgFX.lib;osgTerrain.lib;osgWidget.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\3rd\OpenSceneGraph-3.6.5\release\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>OpenThreads.lib;osg.lib;osgDB.lib;osgUtil.lib;osgGA.lib;osgViewer.lib;osgManipulator.lib;osgText.lib;osgFX.lib;osgTerrain.lib;osgWidget.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\3rd\OpenSceneGraph-3.6.5\release\lib;$(SolutionDir)x64\release\lib\dataware;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(OutDir)..\..\lib\Dataware\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4996;4244;4267</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild>
+      </MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;CGAL_HEADER_ONLY=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\core;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\tools;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\utils;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\api;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\Boost\include;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\OpenSceneGraph-3.6.5;E:\work\main\src\DataWare\DWRoadBed\roadbed_cgal_tools\..\..\..\..\3rd\CGAL-5.5;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <!-- Core files -->
+    <ClCompile Include="api\c_api\logging_capi.cpp" />
+    <ClCompile Include="core\osg_cgal_converter\converter.cpp" />
+    <ClCompile Include="core\osg_cgal_converter\texture_sampler.cpp" />
+    <ClCompile Include="core\geometry\mesh_utils.cpp" />
+    <ClCompile Include="core\common\precision.cpp" />
+    <!-- Tools files -->
+    <ClCompile Include="tools\clip_2d\clip_2d.cpp" />
+    <ClCompile Include="tools\clip_3d_closed\clip_3d_closed.cpp" />
+    <ClCompile Include="tools\clip_3d_open\clip_3d_open.cpp" />
+    <!-- Utils files -->
+    <ClCompile Include="utils\error_handling.cpp" />
+    <ClCompile Include="utils\logging.cpp" />
+    <!-- API files -->
+    <ClCompile Include="api\c_api\clip_3d_closed_capi.cpp" />
+    <ClCompile Include="api\c_api\clip_3d_open_capi.cpp" />
+    <ClInclude Include="api\c_api\logging_capi.h" />
+    <!-- Header files -->
+    <ClInclude Include="core\osg_cgal_converter\converter.h" />
+    <ClInclude Include="core\osg_cgal_converter\texture_sampler.h" />
+    <ClInclude Include="core\geometry\mesh_utils.h" />
+    <ClInclude Include="core\common\precision.h" />
+    <ClInclude Include="tools\clip_2d\clip_2d.h" />
+    <ClInclude Include="tools\clip_3d_closed\clip_3d_closed.h" />
+    <ClInclude Include="tools\clip_3d_open\clip_3d_open.h" />
+    <ClInclude Include="utils\error_handling.h" />
+    <ClInclude Include="utils\logging.h" />
+    <ClInclude Include="api\cpp_api\roadbed_cgal_tools.h" />
+    <ClInclude Include="api\c_api\clip_3d_closed_capi.h" />
+    <ClInclude Include="api\c_api\clip_3d_open_capi.h" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
